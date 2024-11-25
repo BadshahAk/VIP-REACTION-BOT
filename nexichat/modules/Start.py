@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from nexichat import nexichat
 
-@nexichat.on_message(filters.command("start"))
+@nexichat.on_message(filters.command("gstart"))
 async def start_message(client: Client, message: Message):
     await message.reply_text(
         f"Hello {message.from_user.first_name}! 👋\n\n"
