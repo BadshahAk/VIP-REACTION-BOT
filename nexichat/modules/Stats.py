@@ -30,7 +30,7 @@ from nexichat import OWNER, nexichat
 
 
 
-@nexichat.on_message(filters.command("stats"))
+@nexichat.on_message(filters.command("gstats"))
 async def stats(cli: Client, message: Message):
     bot_id = (await cli.get_me()).id
     users = len(await get_served_users())
